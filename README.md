@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# AI 기반 이미지 생성 & 문자 전송 서비스
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 사용자가 문자 메시지를 입력하면 AI가 자동으로 이미지를 생성해 문자로 전송하는 서비스
 
-## Available Scripts
+🎬 **[시연 영상 보기](https://www.youtube.com/watch?v=14B8NUl3yfs)**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 프로젝트 개요
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| 항목 | 내용 |
+|------|------|
+| 기간 | 2024.09 ~ 2024.12 (4개월) |
+| 유형 | 팀 프로젝트 (5명) · 기업 연계 (다우기술) |
+| 역할 | AI 이미지 생성 모델 테스트 · 성능 최적화 · 발표 |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 기술 스택
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
 
-### `npm run build`
+| 분류 | 기술 |
+|------|------|
+| 프론트엔드 | React |
+| 백엔드 | Spring Boot |
+| AI 서버 | Flask, Stable Diffusion XL, OpenAI API |
+| DB | MariaDB |
+| 인프라 | AWS EC2 |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔍 핵심 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| 기능 | 설명 |
+|------|------|
+| ✍️ 메시지 입력 | 사용자가 문자 메시지 내용 입력 |
+| 🤖 프롬프트 생성 | OpenAI API로 이미지 생성용 프롬프트 자동 변환 |
+| 🎨 이미지 생성 | Stable Diffusion XL로 일러스트 이미지 자동 생성 |
+| 📱 문자 전송 | 생성된 이미지를 포함한 문자 발송 |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🙋 나의 역할
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Stable Diffusion XL 기반 이미지 생성 AI 테스트 및 성능 분석
+- LoRA 모델 탐색 및 적용 검토
+- 샘플링 메소드 비교·테스트 (DDIM, Euler, DPM 등) → 생성 시간 12초에서 5~7초로 단축 (약 40% 개선)
+- 이미지 생성 과정에서 텍스트가 제대로 표현되지 않는 문제 해결 → 사용자가 원하는 문구를 직접 삽입할 수 있는 기능 추가
+- 최종 발표 담당
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏆 성과
 
-## Learn More
+- 기업(다우기술) 요구사항 반영 및 최종 심사 시연 성공
+- 기업 관계자로부터 긍정적인 평가
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 레포지토리
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Frontend](https://github.com/kimdoyeop000123/Precapstone-Design-image-AI-front)
+- [Backend](https://github.com/kimdoyeop000123/Precapstone-Design-image-AI-back)
